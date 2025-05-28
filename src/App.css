@@ -72,7 +72,7 @@ footer {
   margin-top: auto;
 }
 
-a.btn, #header-text {
+a.btn, #header-text, .logo-link {
   text-decoration: none; 
   padding: 0 3vh; 
   display: inline-block;
@@ -81,7 +81,7 @@ a.btn, #header-text {
   transition: transform 0.3s ease-in-out; 
 }
 
-a.btn:hover, #header-text:hover {
+a.btn:hover, #header-text:hover, .logo-link:hover {
   background: linear-gradient(90deg, #0A6DFD, #ffffff69, #0A6DFD);
   background-size: 200% 100%;
   animation: shimmer 3.5s infinite;
@@ -105,7 +105,7 @@ a.btn:hover, #header-text:hover {
   
 }
 
-#script-header {
+.page-header {
   height: 100%;
   padding:2vh;
   color: #fff;
@@ -114,9 +114,8 @@ a.btn:hover, #header-text:hover {
   animation: shimmer 3.5s infinite;
   border-bottom-left-radius: 1vh;
   border-bottom-right-radius: 1vh;
+  margin-bottom: 2vh;
 }
-
-
 
 .card {
   margin-top: 2vh;

@@ -5,6 +5,7 @@ import Navbar from './pages/NavBar'
 import Home from './pages/Home';
 import Scripts from './pages/Scripts';
 import Footer from './pages/Footer';
+import About from './pages/About';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/scripts" element={<Scripts />} />
+          <Route path='/about' element={<About/>} />
         </Routes>
       </Router>
       <Footer/>

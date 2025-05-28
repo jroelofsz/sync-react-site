@@ -32,6 +32,11 @@ export default function Navbar() {
                             Scripts
                         </NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link text-white" to="/about">
+                            About
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
         </nav>

@@ -1,9 +1,7 @@
-import React from 'react';
-
-const Scripts: React.FC = () => {
+export default function Scripts() {
     return (
         <div className="container">
-            <h1 className="text-center mb-4" id="script-header">Scripts</h1>
+            <h1 className="text-center mb-4 page-header" >Scripts</h1>
             <div className="row p-5">
                 <div className="col-md-4">
                     <div className="card bg-dark text-white shadow-lg">
@@ -11,7 +9,6 @@ const Scripts: React.FC = () => {
                         <div className="card-body">
                             <h5 className="card-title">lbs_pedshops</h5>
                             <p className="card-text">A custom ped selling script designed for QB-Core and Qbox.</p>
-                            <button className="btn btn-primary">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -21,7 +18,6 @@ const Scripts: React.FC = () => {
                         <div className="card-body">
                             <h5 className="card-title">lbs_admin</h5>
                             <p className="card-text">A custom admin menu built with React + TS.</p>
-                            <button className="btn btn-primary">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -31,7 +27,6 @@ const Scripts: React.FC = () => {
                         <div className="card-body">
                             <h5 className="card-title">lbs_drugrun</h5>
                             <p className="card-text">A QBCore drug running script.</p>
-                            <button className="btn btn-primary">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -51,5 +46,3 @@ const Scripts: React.FC = () => {
         </div>
     );
 };
-
-export default Scripts;
