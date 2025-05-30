@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import './App.css'
 import Navbar from './pages/NavBar'
 import Home from './pages/Home';
 import Scripts from './pages/Scripts';
@@ -10,7 +11,7 @@ import About from './pages/About';
 function App() {
 
   return (
-    <div className='app-wrapper bg-dark'>
+    <div className='app-wrapper'>
       <Router>
         <Navbar />
         <Routes>
