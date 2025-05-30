@@ -4,11 +4,13 @@ export default function Home() {
     return (
         <div className="container text-white text-center">
             <h1 className='page-header'>Home</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
             <hr></hr>
             <br></br>
             <h3>Upcoming Scripts</h3>
             <div className="d-flex justify-content-center">
-                
                 <div className="card bg-dark text-white shadow-lg" style={{ maxWidth: '28rem' }}>
                     <div className="card-body">
                         <h3 className="card-title mb-3">lbs_drugun</h3>
