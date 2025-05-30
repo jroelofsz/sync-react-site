@@ -105,6 +105,17 @@ a.btn:hover, #header-text:hover, .logo-link:hover {
   
 }
 
+.about-section {
+  height: 100%;
+  padding:2vh;
+  color: #fff;
+  background: linear-gradient(90deg, #0A6DFD, #ffffff69, #0A6DFD);
+  background-size: 200% 100%;
+  animation: shimmer 3.5s infinite;
+  border-radius: 1vh;
+  margin-bottom: 2vh;
+}
+
 .page-header {
   height: 100%;
   padding:2vh;
@@ -127,4 +138,15 @@ ul {
 }
 li {
   margin: 2vh;
+}
+
+img {
+  margin: 1vh;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+img:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
 }
