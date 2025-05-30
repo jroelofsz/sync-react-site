@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #0056B5;
+  --secondary-color: #0091ff;
+  --text-color: #fff;
+  --background-color: #1d1e1f;
+  --secondary-background-color: #2c2d2e;
+  --border-radius: 1vh;
+}
+
 /*KEYFRAMES*/
 
 @keyframes shimmer {
@@ -52,27 +61,77 @@
   font-style: normal;
 }
 
+/* App styling */
 html, body {
   height: 100%;
   font-family: 'ZxGamut';
   margin: 0;
   padding: 0;
-  background-color: #212529; 
+  background-color: var(--background-color); 
 }
-
 
 .app-wrapper {
   display: flex;
   font-family: 'ZxGamut';
   flex-direction: column;
-  min-height: 100vh; 
+  /* min-height: 100vh;  */
 }
 
-footer {
-  margin-top: auto;
+ul {
+  list-style: none;
+}
+li {
+  margin: 2vh;
+}
+img {
+  margin: 1vh;
+  transition: transform 0.3s ease-in-out;
 }
 
-a.btn, #header-text, .logo-link {
+img:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* overwriting bootstrap styling for color customization */
+.btn-primary, .bg-primary  {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+
+/* Scripts Styling */
+.page-header {
+  height: 100%;
+  padding:2vh;
+  color: #fff;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+  background-size: 200% 100%;
+  animation: shimmer 3.5s infinite;
+  border-bottom-left-radius: 1vh;
+  border-bottom-right-radius: 1vh;
+  margin-bottom: 2vh;
+}
+
+/* About Styling */
+
+.about-section {
+  height: 100%;
+  padding:2vh;
+  color: #fff;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+  background-size: 200% 100%;
+  animation: shimmer 3.5s infinite;
+  border-radius: 1vh;
+  margin-bottom: 2vh;
+}
+.card {
+  margin-top: 2vh;
+  max-height: 80vh;
+}
+
+/* button styling */
+a.btn, #header-text {
   text-decoration: none; 
   padding: 0 3vh; 
   display: inline-block;
@@ -82,12 +141,12 @@ a.btn, #header-text, .logo-link {
 }
 
 a.btn:hover, #header-text:hover, .logo-link:hover {
-  background: linear-gradient(90deg, #0A6DFD, #ffffff69, #0A6DFD);
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
   background-size: 200% 100%;
   animation: shimmer 3.5s infinite;
   transform: translateY(-10px);
   height: 100%;
-  color: #fff !important;
+  color: var(--text-color) !important;
   transition: transform 0.3s ease-in-out; 
 }
 
@@ -98,55 +157,15 @@ a.btn:hover, #header-text:hover, .logo-link:hover {
 }
 
 .nav-item:hover {
-  background: linear-gradient(90deg, #0A6DFD, #ffffff69, #0A6DFD);
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
   background-size: 200% 100%;
   animation: shimmer 3.5s infinite;
   transform: translateY(-10px);
   
 }
 
-.about-section {
-  height: 100%;
-  padding:2vh;
-  color: #fff;
-  background: linear-gradient(90deg, #0A6DFD, #ffffff69, #0A6DFD);
-  background-size: 200% 100%;
-  animation: shimmer 3.5s infinite;
-  border-radius: 1vh;
-  margin-bottom: 2vh;
-}
-
-.page-header {
-  height: 100%;
-  padding:2vh;
-  color: #fff;
-  background: linear-gradient(90deg, #0A6DFD, #ffffff69, #0A6DFD);
-  background-size: 200% 100%;
-  animation: shimmer 3.5s infinite;
-  border-bottom-left-radius: 1vh;
-  border-bottom-right-radius: 1vh;
-  margin-bottom: 2vh;
-}
-
-.card {
-  margin-top: 2vh;
-  max-height: 80vh;
-}
-
-ul {
-  list-style: none;
-}
-li {
-  margin: 2vh;
-}
-
-img {
-  margin: 1vh;
-  transition: transform 0.3s ease-in-out;
-
-}
-
-img:hover {
-  transform: translateY(-10px);
-  transition: transform 0.3s ease-in-out;
+/* Footer styling */
+footer {
+  margin-top: auto;
+  background-color: var(--secondary-background-color);
 }
