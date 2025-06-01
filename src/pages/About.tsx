@@ -1,3 +1,5 @@
+
+
 export default function About() {
     return (
         <div className="container text-white text-center">
@@ -16,7 +18,7 @@ export default function About() {
                     <div className="col-md-6 d-inline">
                         <h2>lebubble</h2>
                         <a href='/' rel='noopener noreferrer' className='text-decoration-none text-white'>
-                            <img src='../images/lbs_scripts_logo_icon_96x96.png' alt="Lebubble Logo" className="rounded-circle mb-4" style={{ width: '96px', height: '96px' }} />
+                            <img src="/images/lbs_scripts_logo_icon_96x96.png" alt="Lebubble Logo" className="rounded-circle mb-4" style={{ width: '96px', height: '96px' }} />
                         </a>
                         <a href='https://github.com/Project-Sloth' target="_blank" rel="noopener noreferrer" className='text-decoration-none'>
                             <img src='../images/project_sloth_logo.png' alt='Project Sloth Logo' className="rounded-circle mb-4" style={{ width: '96px', height: '96px' }} />
