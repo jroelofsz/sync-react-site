@@ -83,12 +83,12 @@ ul {
 li {
   margin: 2vh;
 }
-img {
+.rounded-circle  {
   margin: 1vh;
   transition: transform 0.3s ease-in-out;
 }
 
-img:hover {
+.rounded-circle  {
   transform: translateY(-10px);
   transition: transform 0.3s ease-in-out;
 }
