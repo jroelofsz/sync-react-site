@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className='app-wrapper'>
-      <Router>
+      <Router basename="/react-site">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
