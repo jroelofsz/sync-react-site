@@ -84,13 +84,13 @@ li {
   margin: 2vh;
 }
 .rounded-circle  {
-  margin: 1vh;
-  transition: transform 0.3s ease-in-out;
+  margin: 1vh !important;
+  transition: transform 0.3s ease-in-out !important;
 }
 
-.rounded-circle  {
-  transform: translateY(-10px);
-  transition: transform 0.3s ease-in-out;
+.rounded-circle:hover  {
+  transform: translateY(-10px) !important;
+  transition: transform 0.3s ease-in-out !important;
 }
 
 /* overwriting bootstrap styling for color customization */
