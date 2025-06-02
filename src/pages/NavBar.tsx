@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-primary text-white p-3">
             <a className="navbar-brand text-white fs-1" id="header-text" href="/">
-                Lebubble Scripts
+                Sync RP
             </a>
             <button
                 className="navbar-toggler"
@@ -25,11 +25,6 @@ export default function Navbar() {
                     <li className="nav-item px-1">
                         <NavLink className="nav-link text-white" to="/">
                             Home
-                        </NavLink>
-                    </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link text-white" to="/scripts">
-                            Scripts
                         </NavLink>
                     </li>
                     <li className="nav-item">

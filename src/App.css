@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #0056B5;
-  --secondary-color: #0091ff;
+  --primary-color: #25AAEA;
+  --secondary-color: #000F30;
   --text-color: #fff;
-  --background-color: #1d1e1f;
+  --background-color: #1d1e1f97;
   --secondary-background-color: #2c2d2e;
   --border-radius: 1vh;
 }
@@ -67,7 +67,9 @@ html, body {
   font-family: 'ZxGamut';
   margin: 0;
   padding: 0;
-  background-color: var(--background-color); 
+  /* background-color: var(--background-color);  */
+  background-image: url("../images/sync_logo.png");
+  background-size: cover;
 }
 
 .app-wrapper {
@@ -99,6 +101,14 @@ li {
   border-color: var(--primary-color) !important;
 }
 
+.navbar {
+  background-image: url("../images/sync_logo.png")
+}
+
+.container {
+  background-color: var(--background-color);
+  min-height: 100vh !important;
+}
 
 /* Scripts Styling */
 .page-header {

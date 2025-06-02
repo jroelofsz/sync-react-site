@@ -14,26 +14,8 @@ export default function Footer(){
                     <h4>Links</h4>
                     <ul className='list-unstyled'>
                         <li>
-                            <a  className = 'btn btn-primary fw-bold'
-                                href="https://github.com/Lebubble-Scripts"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <FaGithub size={32}/> GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a  className = 'btn btn-primary fw-bold'
-                                href="https://lebubble-scripts.gitbook.io/lebubble-scripts-docs"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <SiGitbook size={32} /> Documentation
-                            </a>
-                        </li>
-                        <li>
                             <a className='btn btn-primary fw-bold'
-                                href="https://discord.gg/CUX8hVnswZ"
+                                href="https://discord.gg/zApwCVqDcU"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -50,25 +32,7 @@ export default function Footer(){
                     <ul className="list-unstyled">
                         <li>
                             <a  className = 'btn btn-primary fw-bold'
-                                href="https://ko-fi.com/lebubble"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <SiKofi size={32}/> Support on Ko-fi
-                            </a>
-                        </li>
-                        <li>
-                            <a  className = 'btn btn-primary fw-bold'
-                                href="https://www.buymeacoffee.com/lebubble"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <CiCoffeeCup size={32} /> Buy Me a Coffee
-                            </a>
-                        </li>
-                        <li>
-                            <a  className = 'btn btn-primary fw-bold'
-                                href="https://lebubble-scripts.tebex.io/"
+                                href="https://syncrp.tebex.io/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -79,7 +43,7 @@ export default function Footer(){
                 </div>
             </div>
             <p className='text-center'>
-                © {new Date().getFullYear()} Lebubble Scripts. All rights reserved.
+                © {new Date().getFullYear()} Sync RP. All rights reserved.
             </p>
         </footer>
     )
