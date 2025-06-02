@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-primary text-white p-3">
-            <a className="navbar-brand text-white fs-1" id="header-text" href="/">
+        <nav className="navbar navbar-expand-lg bg-primar p-3">
+            <a className="navbar-brand fs-1" id="header-text" href="/">
                 Sync RP
             </a>
             <button
@@ -23,12 +23,12 @@ export default function Navbar() {
             <div className="collapse navbar-collapse text-center fs-4" id="navbarItems">
                 <ul className="navbar-nav me-auto">
                     <li className="nav-item px-1">
-                        <NavLink className="nav-link text-white" to="/">
+                        <NavLink className="nav-link" to="/">
                             Home
                         </NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link text-white" to="/about">
+                        <NavLink className="nav-link" to="/about">
                             About
                         </NavLink>
                     </li>

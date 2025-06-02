@@ -1,7 +1,7 @@
 :root {
   --primary-color: #25AAEA;
   --secondary-color: #000F30;
-  --text-color: #fff;
+  --text-color: #91e2ff;
   --background-color: #1d1e1f97;
   --secondary-background-color: #2c2d2e;
   --border-radius: 1vh;
@@ -70,12 +70,14 @@ html, body {
   /* background-color: var(--background-color);  */
   background-image: url("../images/sync_logo.png");
   background-size: cover;
+  color: var(--text-color) !important;
 }
 
 .app-wrapper {
   display: flex;
   font-family: 'ZxGamut';
   flex-direction: column;
+  color: var(--text-color) !important;
   /* min-height: 100vh;  */
 }
 
@@ -102,19 +104,34 @@ li {
 }
 
 .navbar {
-  background-image: url("../images/sync_logo.png")
+  background-image: url("../images/sync_logo.png");
+  color: var(--text-color) !important;
+  border-bottom: solid 1px var(--primary-color) !important;
+}
+.nav-item {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out; 
+  border-radius: 1vh;
+}
+
+.navbar-brand, .nav-link {
+  color: var(--text-color) !important;
+}
+
+hr {
+  color: var(--primary-color) !important;
 }
 
 .container {
   background-color: var(--background-color);
-  min-height: 100vh !important;
+  min-height: 70vh !important;
 }
 
 /* Scripts Styling */
 .page-header {
   height: 100%;
-  padding:2vh;
-  color: #fff;
+  padding: 2vh;
+  color: var(--text-color);
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
   background-size: 200% 100%;
   animation: shimmer 3.5s infinite;
@@ -128,10 +145,9 @@ li {
 .about-section {
   height: 100%;
   padding:2vh;
-  color: #fff;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
   background-size: 200% 100%;
-  animation: shimmer 3.5s infinite;
+  animation: shimmer 6s infinite;
   border-radius: 1vh;
   margin-bottom: 2vh;
 }
@@ -160,11 +176,7 @@ a.btn:hover, #header-text:hover, .logo-link:hover {
   transition: transform 0.3s ease-in-out; 
 }
 
-.nav-item {
-  display: inline-block;
-  transition: transform 0.3s ease-in-out; 
-  border-radius: 1vh;
-}
+
 
 .nav-item:hover {
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
